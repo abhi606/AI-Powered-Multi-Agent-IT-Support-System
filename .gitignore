@@ -1,0 +1,27 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Virtual envs
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Logs & escalation fallback queue
+logs/
+*.log
+escalations.jsonl
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+*.swp
+~$* # ignore the PowerPoint lock file
