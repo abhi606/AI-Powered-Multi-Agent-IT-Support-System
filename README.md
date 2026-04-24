@@ -354,6 +354,33 @@ terraform plan              # preview — zero side effects
 terraform apply             # commit the change
 terraform destroy           # tear it all down (we don't run this)
 ```
+### Claude Prompts
+I need to query Azure AI Search with both keyword (BM25) and vector
+similarity in a single request, and filter by category via OData.
+Show me the REST payload shape — what goes in "vectorQueries", how
+to escape single quotes in the filter, and how to limit to top 3.
+
+I'm writing a redact_for_log() helper. Give me robust regex patterns for:
+credit card numbers (with Luhn-friendly spacing), US SSNs, phone numbers,
+email addresses, and generic API-key-looking tokens. Needs to be conservative
+so it doesn't over-redact normal text.
+
+Help me write a Dockerfile for a Streamlit app that will run on Azure
+App Service Linux. I keep hitting ContainerTimeout on boot. Need the
+right CMD flags for Streamlit (--server.address=0.0.0.0), the right
+EXPOSE port, and I need to know which WEBSITES_* app settings Azure
+requires to map the container port correctly.
+
+Using autogen-agentchat 0.4, how do I wire three AssistantAgents into
+a RoundRobinGroupChat with a TextMentionTermination on "TERMINATE"?
+One of the agents needs a tool with reflect_on_tool_use=True. Show me
+the async run pattern so I can call it from synchronous Streamlit.
+
+Write a Terraform config that provisions: resource group, Linux App
+Service Plan (B1), Azure Container Registry with admin enabled, Azure
+OpenAI with gpt-4o + text-embedding-3-small deployments, Azure AI Search
+(basic), and a Linux web app pulling from ACR with app_settings for all
+my env vars.
 
 ### 8.9 Live-demo moment (what I did at the end)
 To prove Terraform is actually in charge now, I edited the RG tag from `Owner = "prav"` to `Owner = "abhigna chandra"`, ran `terraform apply`, and watched the portal update within seconds. That change is what proved the code path is real — not a drawing on a slide.
