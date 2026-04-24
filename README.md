@@ -383,7 +383,7 @@ OpenAI with gpt-4o + text-embedding-3-small deployments, Azure AI Search
 my env vars.
 
 ### 8.9 Live-demo moment (what I did at the end)
-To prove Terraform is actually in charge now, I edited the RG tag from `Owner = "prav"` to `Owner = "abhigna chandra"`, ran `terraform apply`, and watched the portal update within seconds. That change is what proved the code path is real — not a drawing on a slide.
+To prove Terraform is actually in charge now, I edited the RG tag to `Owner = "abhigna chandra"`, ran `terraform apply`, and watched the portal update within seconds. That change is what proved the code path is real — not a drawing on a slide.
 
 ---
 
