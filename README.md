@@ -55,6 +55,9 @@ The result: fewer tickets reach humans, humans only see the genuinely hard ones,
        └───────────────────────────────────┘
 ```
 
+
+<img width="2187" height="1562" alt="architecture_supportx" src="https://github.com/user-attachments/assets/ab894567-9749-43ba-bb89-aa5439867c37" />
+
 Three agents, one orchestrator, two Azure AI services, one SMTP escalation path, and a thick layer of guardrails around the edges.
 
 ---
